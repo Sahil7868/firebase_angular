@@ -1,0 +1,26 @@
+<!--<input type="number" [(ngModel)]="num1">
+<input type="number" [(ngModel)]="num2">
+
+<h1>{{add1}}</h1>
+
+<button (click)="justclick()">click</button>-->
+<input type="text" [(ngModel)]="p_id">
+<input type="text" [(ngModel)]="pname">
+<input type="number" [(ngModel)]="pprice">
+<input type="text" [(ngModel)]="pimg">
+<input type="number" [(ngModel)]="soh">
+
+<button (click)="addd()">add</button>
+<table>
+  <tr *ngFor="let item of data">
+<td>{{item.pname}}</td>
+<td>{{item.pprice}}</td>
+<td>{{item.soh}}</td>
+<td>
+
+<img height="150" width="150" src="{{item.pimg}}">
+
+</td>
+<td> <button (click)="delete(item)">delete</button>
+  </tr>
+  </table>  
